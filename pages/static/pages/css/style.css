@@ -1,0 +1,9 @@
+.navbar {
+  display: block;
+}
+
+.navbar__list {
+  list-style-type: none;
+  display: flex;
+  column-gap: 10px;
+}

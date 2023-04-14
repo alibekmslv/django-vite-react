@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block styles %}
+<link rel="stylesheet" href="{% static 'pages/css/style.css' %}">
+{% endblock styles %}
+{% block title %}Blog{% endblock title %}
+{% block content %}
+{% include 'pages/includes/navbar.html' %}
+<h1>Blog Page</h1>
+<div id="Second" class="__react-root"></div>
+{% endblock content %}

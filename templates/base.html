@@ -1,0 +1,25 @@
+{% load django_vite %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  {% if debug %}
+  <script type="module">
+    import RefreshRuntime from 'http://127.0.0.1:5173/@react-refresh'
+    RefreshRuntime.injectIntoGlobalHook(window)
+    window.$RefreshReg$ = () => {}
+    window.$RefreshSig$ = () => (type) => type
+    window.__vite_plugin_react_preamble_installed__ = true
+  </script>
+  {% endif %}
+  {% vite_hmr_client %}
+  {% vite_asset 'frontend/main.jsx' %}
+  {% block styles %}{% endblock styles %}
+  <title>{% block title %}{% endblock title %}</title>
+</head>
+<body>
+  {% block content %}{% endblock content %}
+</body>
+</html>

@@ -1,0 +1,39 @@
+{
+  "_react-02a0b675.js": {
+    "file": "assets/react-02a0b675.js"
+  },
+  "frontend/App.jsx": {
+    "file": "assets/App-4a0c0cbe.js",
+    "imports": [
+      "frontend/main.jsx",
+      "_react-02a0b675.js"
+    ],
+    "isDynamicEntry": true,
+    "src": "frontend/App.jsx"
+  },
+  "frontend/Second.jsx": {
+    "file": "assets/Second-9f131a6b.js",
+    "imports": [
+      "frontend/main.jsx",
+      "_react-02a0b675.js"
+    ],
+    "isDynamicEntry": true,
+    "src": "frontend/Second.jsx"
+  },
+  "frontend/main.css": {
+    "file": "assets/main-24d3b23a.css",
+    "src": "frontend/main.css"
+  },
+  "frontend/main.jsx": {
+    "css": [
+      "assets/main-24d3b23a.css"
+    ],
+    "dynamicImports": [
+      "frontend/App.jsx",
+      "frontend/Second.jsx"
+    ],
+    "file": "assets/main-2ada0dcd.js",
+    "isEntry": true,
+    "src": "frontend/main.jsx"
+  }
+}

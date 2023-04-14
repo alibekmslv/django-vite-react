@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Home{% endblock title %}
+{% block styles %}
+<link rel="stylesheet" href="{% static 'pages/css/style.css' %}">
+{% endblock styles %}
+{% block content %}
+{% include 'pages/includes/navbar.html' %}
+<main>
+  <h1 class="text-4xl">Patagonia</h1>
+  <img width="640" height="424" src="{% static 'pages/images/image.jpg' %}" alt="Patagonia Mountains">
+  <h2>Blog</h2>
+  <div id="root" class="__react-root"></div>
+</main>
+{% endblock content %}
